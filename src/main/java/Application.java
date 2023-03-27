@@ -16,5 +16,17 @@ public class Application {
 
 //        List<Object> emptylist = Collections.emptyList();
 //        emptylist.add(new Object());
+
+        int number = 1;
+        try {
+            number = 10/1;
+            String test = null;
+            System.out.println(test.length());
+        } catch (ArithmeticException e) {
+            System.out.println("operation divide by zero not supported");
+        } catch (NullPointerException e){
+            System.out.println("nullpointer exception");
+        }
+        System.out.println(number);
     }
 }
